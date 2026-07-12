@@ -17,6 +17,7 @@ SPL Query:
 ### Step 2 – Review the Command Line
 Command observed:
 #### "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass
+<img width="1351" height="930" alt="Screenshot 2026-07-12 at 18 05 46" src="https://github.com/user-attachments/assets/894ed96c-640a-45c8-b17d-c5f0f62af6be" />
 
 ### Step 3 – Investigate Child Processes
 Using the Process GUID and Parent Process information, child processes were reviewed.
