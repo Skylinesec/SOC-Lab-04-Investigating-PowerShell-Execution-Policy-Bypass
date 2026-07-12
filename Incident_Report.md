@@ -13,3 +13,7 @@ SPL Query: index=main EventCode=1 Image="*powershell.exe"
 - User account
 - Parent process
 - Full command line .. etc
+
+### Step 2 – Review the Command Line
+Command observed:
+### "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass
