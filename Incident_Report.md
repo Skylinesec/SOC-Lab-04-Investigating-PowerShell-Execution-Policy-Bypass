@@ -36,4 +36,28 @@ Observed created file:
 SPL Query:
 #### index=main EventCode=3
 * A network connection was observed.
-* Further investigation found no evidence of malicious destinations or suspicious outbound communication. 
+* Further investigation found no evidence of malicious destinations or suspicious outbound communication.
+
+### Step 6 – Review Registry Activity
+SPL Query (tried 1 of 3): 
+#### index=main (EventCode=12, EventCode=13, EventCode=14)
+
+### Evidence Collected
+| Artifact          | Result              |
+| ----------------- | ------------------- |
+| User              | Jetros-Laptop\jetro |
+| Process           | powershell.exe      |
+| Execution Policy  | Bypass              |
+| Process Creation  | Yes                 |
+| Child Process     | Yes                 |
+| File Creation     | CLR Usage Log       |
+| Network Activity  | Yes                 |
+| Registry Activity | Yes                 |
+| Malicious Payload | Not Observed        |
+| Persistence       | Not Observed        |
+| Credential Access | Not Observed        |
+
+### Analyst Assessment
+PowerShell was launched interactively by the logged-in user using the -ExecutionPolicy Bypass parameter.
+During execution, expected administrative commands were performed. Telemetry showed normal PowerShell artifacts, including a CLR usage log, registry activity, and a network connection. No malicious payloads, persistence mechanisms, credential access, or suspicious child processes were identified.
+Based on the available evidence, the observed activity is consistent with legitimate administrative testing rather than malicious behavior.
