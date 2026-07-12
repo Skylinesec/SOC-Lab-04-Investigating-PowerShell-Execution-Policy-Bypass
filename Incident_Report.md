@@ -42,7 +42,7 @@ SPL Query:
 SPL Query (tried 1 of 3): 
 #### index=main (EventCode=12, EventCode=13, EventCode=14)
 
-### Evidence Collected
+## Evidence Collected
 | Artifact          | Result              |
 | ----------------- | ------------------- |
 | User              | Jetros-Laptop\jetro |
@@ -57,7 +57,7 @@ SPL Query (tried 1 of 3):
 | Persistence       | Not Observed        |
 | Credential Access | Not Observed        |
 
-### Analyst Assessment
+## Analyst Assessment
 PowerShell was launched interactively by the logged-in user using the -ExecutionPolicy Bypass parameter.
 During execution, expected administrative commands were performed. Telemetry showed normal PowerShell artifacts, including a CLR usage log, registry activity, and a network connection. No malicious payloads, persistence mechanisms, credential access, or suspicious child processes were identified.
 Based on the available evidence, the observed activity is consistent with legitimate administrative testing rather than malicious behavior.
