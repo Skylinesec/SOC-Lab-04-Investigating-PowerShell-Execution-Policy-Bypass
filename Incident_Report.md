@@ -61,3 +61,17 @@ SPL Query (tried 1 of 3):
 PowerShell was launched interactively by the logged-in user using the -ExecutionPolicy Bypass parameter.
 During execution, expected administrative commands were performed. Telemetry showed normal PowerShell artifacts, including a CLR usage log, registry activity, and a network connection. No malicious payloads, persistence mechanisms, credential access, or suspicious child processes were identified.
 Based on the available evidence, the observed activity is consistent with legitimate administrative testing rather than malicious behavior.
+
+## Severity
+#### Medium
+Although the use of ExecutionPolicy Bypass warrants investigation due to its common use in an attackers arsenal, the surrounding evidence did not indicate malicious activity. The observed behavior aligned with expected PowerShell execution during legitimate administrative testing.
+
+## Escalation Decision
+#### No escalation recommended.
+The investigation did not identify indicators of compromise that would justify escalation to a Tier 2 analyst.
+
+## MITRE ATT&CK MAPPING
+| Technique                         | ID        |
+| --------------------------------- | --------- |
+| PowerShell                        | T1059.001 |
+| Command and Scripting Interpreter | T1059     |
