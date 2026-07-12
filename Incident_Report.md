@@ -6,7 +6,6 @@ A PowerShell process was launched using the ExecutionPolicy Bypass parameter.
 
 ## Investigation
 ### Step 1 – Identify the Process Creation Event
-
 SPL Query: 
 #### index=main EventCode=1 Image="*powershell.exe"
 
@@ -25,3 +24,16 @@ Using the Process GUID and Parent Process information, child processes were revi
 ### Result:
 A child process was observed.
 No suspicious process execution or malicious binaries were identified.
+
+### Step 4 – Review File Creation Activity
+SPL Query:
+#### index=main EventCode=11
+
+Observed created file: 
+#### C:\Users\jetro\AppData\Local\Microsoft\CLR_v4.0\UsageLogs\powershell.exe.log
+
+### Step 5 – Review Network Activity
+SPL Query:
+#### index=main EventCode=3
+* A network connection was observed.
+* Further investigation found no evidence of malicious destinations or suspicious outbound communication. 
