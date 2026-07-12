@@ -18,3 +18,10 @@ SPL Query:
 ### Step 2 – Review the Command Line
 Command observed:
 #### "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass
+
+### Step 3 – Investigate Child Processes
+Using the Process GUID and Parent Process information, child processes were reviewed.
+
+### Result:
+A child process was observed.
+No suspicious process execution or malicious binaries were identified.
