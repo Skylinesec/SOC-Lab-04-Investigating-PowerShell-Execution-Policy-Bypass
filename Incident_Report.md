@@ -37,10 +37,13 @@ SPL Query:
 #### index=main EventCode=3
 * A network connection was observed.
 * Further investigation found no evidence of malicious destinations or suspicious outbound communication.
+<img width="872" height="626" alt="Screenshot 2026-07-12 at 18 54 22" src="https://github.com/user-attachments/assets/ee3967b5-7f7e-47b0-8d03-6314fd7f1022" />
 
 ### Step 6 – Review Registry Activity
 SPL Query (tried 1 of 3): 
 #### index=main (EventCode=12, EventCode=13, EventCode=14)
+<img width="821" height="504" alt="Screenshot 2026-07-12 at 19 00 32" src="https://github.com/user-attachments/assets/dc0d04b6-4a8b-4f1b-930a-201746d67d22" />
+- Sysmon Event ID 13 showing PowerShell modifying a registry value during execution. The event was correlated with the PowerShell process launched using the -ExecutionPolicy Bypass argument. The registry modification appeared consistent with normal PowerShell runtime behavior, and no persistence-related registry keys were identified.
 
 ## Evidence Collected
 | Artifact          | Result              |
