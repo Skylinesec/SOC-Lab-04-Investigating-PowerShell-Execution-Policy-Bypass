@@ -29,8 +29,7 @@ No suspicious process execution or malicious binaries were identified.
 ### Step 4 – Review File Creation Activity
 SPL Query:
 #### index=main EventCode=11
-
-Observed created file: 
+#### Observed created file: 
 <img width="829" height="484" alt="Screenshot 2026-07-12 at 18 46 02" src="https://github.com/user-attachments/assets/4d0eb7e8-46df-41cf-86af-7451ef056245" />
 
 ### Step 5 – Review Network Activity
