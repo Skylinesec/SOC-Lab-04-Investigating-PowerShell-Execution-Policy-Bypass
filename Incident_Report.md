@@ -31,7 +31,7 @@ SPL Query:
 #### index=main EventCode=11
 
 Observed created file: 
-#### C:\Users\jetro\AppData\Local\Microsoft\CLR_v4.0\UsageLogs\powershell.exe.log
+<img width="829" height="484" alt="Screenshot 2026-07-12 at 18 46 02" src="https://github.com/user-attachments/assets/4d0eb7e8-46df-41cf-86af-7451ef056245" />
 
 ### Step 5 – Review Network Activity
 SPL Query:
