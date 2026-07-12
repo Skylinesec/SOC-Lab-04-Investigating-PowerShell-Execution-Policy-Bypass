@@ -5,7 +5,7 @@ A PowerShell process was launched using the ExecutionPolicy Bypass parameter.
 - #### The objective was to determine whether the observed activity was benign or required escalation.
 
 ## Investigation
-### Step 1 – Identify the Process Creation Event
+- ### Step 1 – Identify the Process Creation Event
 
 SPL Query: 
 #### index=main EventCode=1 Image="*powershell.exe"
@@ -15,11 +15,11 @@ SPL Query:
 - Parent process
 - Full command line .. etc
 
-### Step 2 – Review the Command Line
+- ### Step 2 – Review the Command Line
 Command observed:
 #### "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass
 
-### Step 3 – Investigate Child Processes
+- ### Step 3 – Investigate Child Processes
 Using the Process GUID and Parent Process information, child processes were reviewed.
 
 ### Result:
