@@ -8,3 +8,8 @@ A PowerShell process was launched using the ExecutionPolicy Bypass parameter.
 ### Step 1 – Identify the Process Creation Event
 
 SPL Query: index=main EventCode=1 Image="*powershell.exe"
+
+### Key observations included:
+User account
+Parent process
+Full command line .. etc
